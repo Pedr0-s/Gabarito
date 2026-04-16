@@ -1,0 +1,116 @@
+body {
+  font-family: Arial;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 30px;
+
+  background: linear-gradient(135deg, #b5b0a6, #b5b0a6, #b5b0a6);
+}
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+    .title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 20px;
+    }
+
+    .formulario {
+      background: rgba(45, 57, 52, 0.406);
+      padding: 20px;
+      border-radius: 10px;
+      width: 260px;
+        box-shadow: 0 0 0 2px #000000, 0 0 10px #06000b;
+      box-shadow: 0 0 0 2px #180303 , 10px 20px #06000b ;
+    }
+
+    .formulario input {
+      width: 90%;
+      margin-bottom: 10px;
+      padding: 8px;
+      border: none;
+      border-radius: 5px;
+    }
+ 
+    .preview {
+      background: rgba(255, 234, 0, 0.659);
+      padding: 25px;
+      border-radius: 10px;
+      width: 350px;
+      min-height: 250px;
+      white-space: pre-line;
+      box-shadow: 0 0 0 2px #000000, 0 0 10px #06000b;
+      box-shadow: 0 0 0 2px #180303 , 10px 20px #06000b ;
+      
+    }
+    .formulario, .preview {
+     transition: all 0.9s ease;
+    }
+    
+.formulario:hover,
+.preview:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+  transition: 0.9s;
+}
+    
+    
+     
+    
+#btnCopiar {
+  margin-top: 10px;
+  padding: 12px;
+ 
+  border: none;
+  border-radius: 8px;
+  background: #8a2be2;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* hover (quando passa o mouse) */
+#btnCopiar:hover {
+  background: #6d1fc7;
+  transform: scale(1.03);
+}
+
+/* clique (efeito de apertar) */
+#btnCopiar:active {
+  transform: scale(0.95);
+}
+
+/* estado de sucesso */
+#btnCopiar.copiado {
+  background: #22c55e;
+  box-shadow: 0 0 10px #22c55e;
+}
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  font-family: Arial;
+}

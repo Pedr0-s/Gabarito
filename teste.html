@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title> Confirmação de Agendamento</title>
+  <link rel="stylesheet" href="stule.css">
+  <script src="main.js"></script>
+ <link rel="icon" href="data:image/svg+xml,
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
+  <text y='.9em' font-size='90'>✅</text>
+</svg>">
+</head>
+<body>
+
+  <!-- FORMULÁRIO -->
+   
+  <div class="formulario">
+    <div class="title"><ion-icon name="document-outline"></ion-icon><h3>Preencher dados ✅</h3>
+   
+    </div>
+    
+
+    <input type="text" id="paciente" placeholder="Paciente👤">
+    <input type="text" list="listc-clinica" id="clinica" placeholder="Clínica🏢">
+      <datalist id="listc-clinica">
+
+            <option value="Aes Endoscopia-(SBC)">
+            <option value="A+ Medicina Diagnostica">
+            <option value="Aqualli">
+            <option value="Aspriw">
+            <option value="Auri Medicina">
+            <option value="Avante Medicina">
+            <option value="Beta Saúde">
+            <option value="Biolider Medicina Diagnóstica - (Vila Formosa / ZL)">
+            <option value="Biofast - Laboratorial">
+            <option value="Biofast - Imagens">
+            <option value="Bio Imagem">
+            <option value="Clínica Popular Saúde Para Todos - Itaim Paulista">
+            <option value="Clínica Cedil - Lapa">
+            <option value="Clínica De Diagnósticos Angel - (São Paulo / ZO)">
+            <option value="Cedusp">
+            <option value="Cedimen">
+            <option value="CDI Primitiva - Osasco">
+            <option value="CDI Piraporinha - Centro De Diagnóstico Por Imagem">
+            <option value="CDB- São Paulo">
+            <option value="Clínica Multidisciplinar Mundo Tea">
+            <option value="Clínica Guarnieri - ZS">
+            <option value="Clínica EL Diagnósticos - Penha">
+            <option value=" EL Diagnósticos - Jabaquara">
+            <option value=" EL Diagnósticos - Santana">
+            <option value="Inovarad - (São Paulo / ZL)">
+            <option value=" Comvida - Osasco (RM)">
+            <option value=" Urológica de Guarulhos">
+            <option value="Start Diagnósticos - Guarulhos">
+            <option value="Centro Médico Carezzato - Lapa (ZO)">
+            <option value=" Fonseca - (Vila Maria Baixa / ZN)">
+            <option value="Diffusion-Santo andré">
+            <option value="Diffusion-Osasco">
+            <option value="Diffusion-Barra funda">
+            <option value="Diffusion-Santa Cecília">
+            <option value="Diffusion-Tucuruvi">
+            <option value="Diffusion-Santa cruz">
+            <option value="Diffusion-Tatuapé">
+            <option value="Dimagem - Lapa (ZO)">
+            <option value="Dimedi">
+            <option value="Doutor SP - Saúde Para Todos">
+            <option value="Dunacor - (Grande São Paulo / SBC)">
+            <option value="Eletrodiagnostico Osasco">
+            <option value="Endo-Serv Serviços Médicos - Santo André">
+            <option value="Femme - Laboratório da Mulher">
+            <option value="Frei Gaspar Medicina Diagnóstica - SBC">
+            <option value="Genesislab - Vila Mariana">
+            <option value="Gestagin - Tatuapé">
+            <option value="Gimi Medicina Diagnóstica - Penha">
+            <option value="Hipermed - Santo Amaro">
+            <option value="Iacsp Análises Clínicas - Santo André">
+            <option value="IBAC - Laboratório Biomédico - Carapicuíba">
+            <option value="ICZL - Instituto de Cardiologia da Zona Leste">
+            <option value="Idimed Instituto de Diagnóstico Médico - Santo Amaro (ZS)">
+            <option value="Global Med (antiga Imadi)">
+            <option value="Inove - Itaquaquecetuba">
+            <option value="Instituto Perez">
+            <option value="Jardim Medicina Diagnóstica - SBC">
+            <option value="JMS - SBC">
+            <option value="Kouros Medicina Diagnóstica - Bela Vista">
+            <option value="Labi">
+            <option value="Labtré Centro de Diagnósticos - Itaquera">
+            <option value="Leven Saúde - (São Paulo / ZS)">
+            <option value="L&T Saúde - Lapa (ZO)">
+            <option value="Máximo - Tatuapé">
+            <option value="MaisImagem Diagnóstico Médico - Itaquera (ZL)">
+            <option value="Medicom - Santo André / Tucuruvi / Vila Matilde">
+            <option value="MK+ Medicina Diagnóstica - Itapecerica da Serra">
+            <option value="Núcleo Paulista de Endoscopia - Osasco">
+            <option value="Ophthalmocenter - Guarulhos">
+            <option value="Osasco Imagem">
+            <option value="Prezecor Medicina Diagnóstica - (São Paulo / ZN)">
+            <option value="Pro Diagnósticos - Osasco (RM)">
+            <option value="Pro Exame - Vergueiro">
+            <option value="QR Clínica Radiológica - Mauá">
+            <option value="QR Diagnósticos - São Bernardo">
+            <option value="Radivision Radiologia - Itaquera">
+            <option value="Rede Clínica Med">
+            <option value="RHM Cardiologia - Lapa (ZO)">
+            <option value="Saint Patrick - Jaguara">
+            <option value="SPTK">
+            <option value="Saúde da Cidade - Taboão da Serra">
+            <option value="Saúde Dourada - ZS">
+            <option value="Sanitas - Guarulhos">
+            <option value="Scopp - Clínica Dr. Luiz Scoppetta - Santo Amaro (ZS)">
+            <option value="SI Saúde / Conceitu’s Med - Santo Amaro (ZS)">
+            <option value="Transduson - Carapicuíba / Barueri">
+            <option value="Ultrassom Popular - São Mateus">
+            <option value="Ultracare Medicina Acessível - Sacomã">
+            <option value="Uniclin - Guarulhos">
+            <option value="UPI - Unidade Paulista de Imagem - Ferraz">
+            <option value="UPI - Unidade Paulista de Imagem - Guaianases">
+            <option value="Vergueiro Saúde Clínica Médica - SBC">
+            <option value="ZDI">
+      </datalist>
+    <input type="text" id="exame" list="exames" placeholder="Procedimento 🧬
+">
+       <datalist id="exames">
+          <option value="Ultrassom Abdome Total"></option>
+          <option value="Angio TC coronariana"></option>
+          <option value="Angio RM coluna"></option>
+          <option value="Ultrassom Abdome Superior">
+          <option value="Ultrassom Abdome Inferior">Ultrassom Abdome Inferior</option>
+          <option value="Ultrassom Pélvico">Ultrassom Pélvico</option>
+          <option value="Ultrassom Transvaginal">Ultrassom Transvaginal</option>
+          <option value="Ultrassom Obstétrico">Ultrassom Obstétrico</option>
+          <option value="Ultrassom Morfológico">Ultrassom Morfológico</option>
+          <option value="Ultrassom Doppler">Ultrassom Doppler</option>
+          <option value="Ultrassom de Tireóide">Ultrassom de Tireóide</option>
+          <option value="Ultrassom de Mamas">Ultrassom de Mamas</option>
+          <option value="Tomografia Computadorizada Crânio">Tomografia Computadorizada Crânio</option>
+          <option value="Tomografia Computadorizada Tórax">Tomografia Computadorizada Tórax</option>
+            <option value="Tomografia Computadorizada Abdome">Tomografia Computadorizada Abdome</option>
+          <option value="Tomografia Computadorizada Pelve">Tomografia Computadorizada Pelve</option>
+          <option value="Tomografia Computadorizada Coluna">Tomografia Computadorizada Coluna</option>
+          <option value="Ressonância Magnética Crânio">Ressonância Magnética Crânio</option>
+          <option value="Ressonância Magnética Coluna">Ressonância Magnética Coluna</option>
+          <option value="Ressonância Magnética Abdome">Ressonância Magnética Abdome</option>
+          <option value="Ressonância Magnética Pelve">Ressonância Magnética Pelve</option>
+          <option value="Ressonância Magnética Articulação">Ressonância Magnética Articulação</option>
+          <option value="Raio-X Tórax">Raio-X Tórax</option>
+            <option value="Raio-X Coluna">Raio-X Coluna</option>
+            <option value="Raio-X Membros">Raio-X Membros</option>
+          <option value="Raio-X Abdome">Raio-X Abdome</option>
+          <option value="Eletrocardiograma">Eletrocardiograma</option>
+          <option value="Ecocardiograma">Ecocardiograma</option>
+          <option value="Teste Ergométrico">Teste Ergométrico</option>
+          <option value="Holter 24h">Holter 24h</option>
+          <option value="MAPA 24h">MAPA 24h</option>
+          <option value="Endoscopia Digestiva Alta">Endoscopia Digestiva Alta</option>
+          <option value="Colonoscopia">Colonoscopia</option>
+          <option value="Retossigmoidoscopia">Retossigmoidoscopia</option>
+          <option value="Exame de Sangue Completo">Exame de Sangue Completo</option>
+      <option value="COLUNA CERVICAL"></option>
+        <option value="COLUNA DORSAL"></option>
+        <option value="COLUNA LOMBO SACRA"></option>
+        <option value="Complemento C2"></option>
+        <option value="Complemento C3"></option>
+        <option value="Complemento C4"></option>
+        <option value="Complemento CH-50"></option>
+        <option value="Coombs direto"></option>
+        <option value="Coombs indireto"></option>
+        <option value="Core Biopsia Guiada Por Us de Região Cervical"></option>
+        <option value="Cortisol"></option>
+        <option value="COSTELAS POR HEMITORAX"></option>
+        <option value="COTOVELO DIREITO"></option>
+        <option value="COTOVELO ESQUERDO"></option>
+        <option value="COXA"></option>
+        <option value="COXA - FEMUR - DIREITO"></option>
+        <option value="COXA - FEMUR - ESQUERDO"></option>
+        <option value="CRANIO PA LAT"></option>
+        <option value="CRANIO PA LAT BRETTON"></option>
+        <option value="CRANIO PA LATA OBL. OU BRETTON HIRTZ"></option>
+        <option value="CREATININA NA URINA"></option>
+        <option value="CREATININA NO SORO"></option>
+        <option value="CREATINO FOSFOQUINASE - FRACAO MB"></option>
+        <option value="CREATINO FOSFOQUINASE TOTAL (CPK)"></option>
+        <option value="Crescimento, hormônio do (HGH)"></option>
+        <option value="Cromo"></option>
+        <option value="Cultura para bactérias anaeróbicas"></option>
+      <option value="Cultura, fezes"></option>
+      <option value="Dehidroepiandrosterona (DHEA)"></option>
+      <option value="DENGUE ANTICORPOS IGG"></option>
+      <option value="DENSITOMETRIA OSSEA"></option>
+      <option value="DIGOXINA"></option>
+      <option value="DIHIDROTESTOSTERONA - SORO"></option>
+      <option value="DOP - VENOSO Membro INFERIOR direito"></option>
+      <option value="DOP - VENOSO Membro INFERIOR esquerdo"></option>
+      <option value="DOP AORTA E ILIACA"></option>
+      <option value="DOP ESCROTAL"></option>
+      <option value="DOP MAMA"></option>
+      <option value="DOP OBSTETRICO"></option>
+      <option value="DOP PELVICO"></option>
+      <option value="DOP PROSTATA"></option>
+      <option value="DOP TIREOIDE"></option>
+      <option value="DOP TRANSVAGINAL"></option>
+      <option value="DOPPLER - CAROTIDAS E VERTEBRAIS"></option>
+      <option value="ECODOPPLER CARDIOGRAMA TRANSTORACICO"></option>
+      <option value="ELETROCARDIOGRAMA"></option>
+      <option value="ELETROENCEFALOGRAMA"></option>
+      <option value="Eletroforese de lipoproteínas"></option>
+      <option value="ELETRONEUROMIOGRAFIA MEMBRO INFERIOR DIREITO"></option>
+      <option value="ELETRONEUROMIOGRAFIA MEMBRO INFERIOR ESQUERDO"></option>
+      <option value="ELETRONEUROMIOGRAFIA MEMBRO SUPERIOR DIREITO"></option>
+      <option value="ELETRONEUROMIOGRAFIA MEMBRO SUPERIOR ESQUERDO"></option>
+      <option value="ENDOSCOPIA DIGESTIVA ALTA"></option>
+      <option value="ESPIROMETRIA SEM BRONCODILATADOR"></option>
+      <option value="ESTRADIOL"></option>
+      <option value="Fator antinúcleo (FAN)"></option>
+      <option value="Fator Reumatóide"></option>
+      <option value="FEMUR DIREITO"></option>
+      <option value="FEMUR ESQUERDO"></option>
+      <option value="FERRITINA SERICA NO SORO"></option>
+      <option value="FERRO SERICO NO SORO"></option>
+      <option value="FOSFATASE ALCALINA NO SORO"></option>
+      <option value="FOSFORO NO SORO"></option>
+      <option value="GAMA GT"></option>
+      <option value="GLICOSE"></option>
+      <option value="GLOBULINA LIGADORA DE HORMONIOS SEXUAIS - SHBG"></option>
+      <option value="Grupo sanguíneo ABO"></option>
+      <option value="HEMOGRAMA COMPLETO"></option>
+      <option value="HEMOGLOBINA GLICADA"></option>
+      <option value="HEPATITE B"></option>
+      <option value="HEPATITE C"></option>
+      <option value="HIV"></option>
+      <option value="HOLTER 24 HORAS"></option>
+      <option value="INSULINA"></option>
+      <option value="JOELHO DIREITO"></option>
+      <option value="JOELHO ESQUERDO"></option>
+      <option value="Lipase"></option>
+      <option value="MAGNESIO NO SORO"></option>
+      <option value="MAMOGRAFIA"></option>
+      <option value="MAPA 24 HORAS"></option>
+      <option value="PROTEINA C REATIVA"></option>
+      <option value="PSA TOTAL"></option>
+      <option value="PSA LIVRE"></option>
+      <option value="T3 TOTAL"></option>
+      <option value="T4 LIVRE"></option>
+      <option value="TSH ULTRA SENSIVEL"></option>
+      <option value="TRIGLICERIDES"></option>
+      <option value="UREIA"></option>
+      <option value="URINA ROTINA"></option>
+      <option value="UROCULTURA"></option>
+      <option value="VDRL"></option>
+      <option value="VITAMINA B12"></option>
+          <option value="ALDOLASE"></option>
+        <option value="ALFA-FETOPROTEINA"></option>
+        <option value="ANTI-HBS"></option>
+        <option value="ANTI-HCV"></option>
+        <option value="ANTI-HIV 1 E 2"></option>
+        <option value="ANTI-TPO"></option>
+        <option value="ANTICORPOS ANTI-NUCLEARES (FAN)"></option>
+        <option value="ANTICOAGULANTE LUPICO"></option>
+
+        <option value="CA 125"></option>
+        <option value="CA 19-9"></option>
+        <option value="CEA"></option>
+
+        <option value="COOMBS DIRETO"></option>
+        <option value="COOMBS INDIRETO"></option>
+
+        <option value="D-DIMERO"></option>
+        <option value="ELETROFORESE DE PROTEINAS"></option>
+        <option value="ELETROFORESE DE HEMOGLOBINA"></option>
+
+        <option value="FATOR REUMATOIDE"></option>
+        <option value="FAN (FATOR ANTINUCLEAR)"></option>
+
+        <option value="GASOMETRIA ARTERIAL"></option>
+        <option value="GASOMETRIA VENOSA"></option>
+
+        <option value="HAPTOGLOBINA"></option>
+        <option value="HOMOCISTEINA"></option>
+
+        <option value="IGE TOTAL"></option>
+        <option value="IGE ESPECIFICO"></option>
+
+        <option value="LACTATO DESIDROGENASE (LDH)"></option>
+        <option value="LIPIDOGRAMA COMPLETO"></option>
+
+        <option value="PROTEINA C"></option>
+        <option value="PROTEINA S"></option>
+
+        <option value="TROPONINA"></option>
+
+        <option value="VHS (VELOCIDADE DE HEMOSSEDIMENTAÇÃO)"></option>
+
+        <option value="ZINCO"></option>
+          <option value="Glicemia">Glicemia</option>
+          <option value="Colesterol Total">Colesterol Total</option>
+          <option value="Triglicerídeos">Triglicerídeos</option>
+          <option value="TSH">TSH</option>
+          <option value="T4 Livre">T4 Livre</option>
+          <option value="Urina Tipo 1">Urina Tipo 1</option>
+          <option value="Urocultura">Urocultura</option>
+            <option value="Fezes Parasitológico">Fezes Parasitológico</option>
+            <option value="Pesquisa de Sangue Oculto">Pesquisa de Sangue Oculto</option>
+            <option value="Consulta Clínica Geral">Consulta Clínica Geral</option>
+      <option value="Consulta Cardiologia">Consulta Cardiologia</option>
+      <option value="Consulta Dermatologia">Consulta Dermatologia</option>
+      <option value="Consulta Ginecologia">Consulta Ginecologia</option>
+      <option value="Consulta Ortopedia">Consulta Ortopedia</option>
+      <option value="Consulta Pediatria">Consulta Pediatria</option>
+      <option value="Consulta Neurologia">Consulta Neurologia</option>
+      <option value="Consulta Endocrinologia">Consulta Endocrinologia</option>
+      <option value="Consulta Gastroenterologia">Consulta Gastroenterologia</option>
+      <option value="Consulta Urologia">Consulta Urologia</option>
+
+      <option value="Check-up Básico">Check-up Básico</option>
+      <option value="Check-up Completo">Check-up Completo</option>
+      <option value="Check-up Executivo">Check-up Executivo</option>
+
+      <option value="Exame de Sangue">Exame de Sangue</option>
+      <option value="Glicemia em Jejum">Glicemia em Jejum</option>
+      <option value="Hemoglobina Glicada">Hemoglobina Glicada</option>
+      <option value="Colesterol Total e Frações">Colesterol Total e Frações</option>
+      <option value="Triglicerídeos">Triglicerídeos</option>
+
+      <option value="Função Hepática">Função Hepática</option>
+      <option value="Função Renal">Função Renal</option>
+      <option value="Ureia">Ureia</option>
+      <option value="Creatinina">Creatinina</option>
+
+      <option value="TSH">TSH</option>
+      <option value="T3">T3</option>
+      <option value="T4 Livre">T4 Livre</option>
+
+      <option value="Beta HCG">Beta HCG</option>
+      <option value="PSA Total">PSA Total</option>
+      <option value="PSA Livre">PSA Livre</option>
+      <option value="Exame de Urina">Exame de Urina</option>
+      <option value="Urocultura">Urocultura</option>
+        <option value="ACIDO URICO"></option>
+        <option value="ALBUMINA"></option>
+        <option value="AMILASE"></option>
+        <option value="BILIRRUBINAS TOTAIS E FRAÇÕES"></option>
+        <option value="CALCIO"></option>
+        <option value="COLESTEROL HDL"></option>
+        <option value="COLESTEROL LDL"></option>
+        <option value="COLESTEROL VLDL"></option>
+        <option value="COLESTEROL TOTAL"></option>
+        <option value="CREATININA"></option>
+        <option value="CK-MB"></option>
+        <option value="CPK"></option>
+        <option value="FERRITINA"></option>
+        <option value="FERRO SERICO"></option>
+        <option value="FOSFATASE ALCALINA"></option>
+        <option value="FOSFORO"></option>
+        <option value="GAMA GT"></option>
+        <option value="GLICEMIA"></option>
+        <option value="GLICEMIA POS-PRANDIAL"></option>
+        <option value="HEMOGLOBINA GLICADA"></option>
+        <option value="INSULINA"></option>
+        <option value="LACTATO"></option>
+        <option value="LDH"></option>
+        <option value="LIPASE"></option>
+        <option value="MAGNESIO"></option>
+        <option value="POTASSIO"></option>
+        <option value="SODIO"></option>
+        <option value="UREIA"></option>
+        <option value="HEMOGRAMA COMPLETO"></option>
+        <option value="CONTAGEM DE PLAQUETAS"></option>
+        <option value="HEMATOCRITO"></option>
+        <option value="HEMOGLOBINA"></option>
+        <option value="TSH"></option>
+        <option value="T3"></option>
+        <option value="T4 LIVRE"></option>
+        <option value="ESTRADIOL"></option>
+        <option value="PROGESTERONA"></option>
+        <option value="PROLACTINA"></option>
+        <option value="TESTOSTERONA TOTAL"></option>
+        <option value="TESTOSTERONA LIVRE"></option>
+        <option value="BETA HCG"></option>
+        <option value="HIV"></option>
+        <option value="HEPATITE B"></option>
+        <option value="HEPATITE C"></option>
+        <option value="VDRL (SIFILIS)"></option>
+        <option value="UROCULTURA"></option>
+
+        <option value="EXAME DE FEZES"></option>
+        <option value="PARASITOLOGICO DE FEZES"></option>
+        <option value="PESQUISA DE SANGUE OCULTO"></option>
+        <option value="Parasitológico de Fezes">Parasitológico de Fezes</option>
+      <option value="Pesquisa de Sangue Oculto nas Fezes">Pesquisa de Sangue Oculto nas Fezes</option>
+
+    </datalist>
+
+    <input type="date" id="data">
+    <input type="time" id="hora">
+    <label for="Entrada">Entrada:</label>
+    <input type="text" id="entrada" placeholder="Valor entrada">
+    <label for="Saida">Saída:</label>
+    <input type="text" id="saida" placeholder="Valor restante">
+<script>
+  const entradaInput = document.getElementById("entrada");
+const saidaInput = document.getElementById("saida");
+
+function formatarMoeda(valor) {
+  valor = valor.replace(/\D/g, ""); // remove tudo que não é número
+  valor = (valor / 100).toFixed(2) + "";
+  valor = valor.replace(".", ",");
+
+  valor = valor.replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+
+  return "R$ " + valor;
+}
+
+entradaInput.addEventListener("input", () => {
+  entradaInput.value = formatarMoeda(entradaInput.value);
+});
+
+saidaInput.addEventListener("input", () => {
+  saidaInput.value = formatarMoeda(saidaInput.value);
+});
+</script>
+  </div>
+
+  <!-- TEXTO GERADO -->
+  <div class="preview" id="resultado"></div>
+  <!-- Esse espaço é para o botão de copiar -->
+ <button id="btnCopiar" onclick="copiarTexto()">📋 Copiar mensagem</button>
+  <!-- Essa parte é para o script de cópia -->
+  <script>
+  function copiarTexto() {
+  const texto = document.getElementById("resultado").innerText;
+
+  navigator.clipboard.writeText(texto)
+    .then(() => {
+      alert("Texto copiado com sucesso! 😎");
+    })
+    .catch(() => {
+      alert("Erro ao copiar 😢");
+    });
+}</script>
+  <script>
+    const paciente = document.getElementById("paciente");
+    const clinica = document.getElementById("clinica");
+    const exame = document.getElementById("exame");
+    const data = document.getElementById("data");
+    const hora = document.getElementById("hora");
+    const entrada = document.getElementById("entrada");
+    const saida = document.getElementById("saida");
+    const resultado = document.getElementById("resultado");
+
+    function formatarData(dataBruta) {
+      if (!dataBruta) return "...";
+
+      const partes = dataBruta.split("-");
+      return `${partes[2]}/${partes[1]}/${partes[0]}`;
+    }
+
+    function atualizarTexto() {
+      const dataFormatada = formatarData(data.value);
+
+      resultado.innerHTML = `
+*Confirmação de AGENDAMENTO* ✅
+
+👤 Paciente: *${paciente.value || "..."}*
+🏥 Nome da Clínica: *${clinica.value}*
+🧪 Procedimento: *${exame.value || "..."}*
+🗓️ Dia e horário: *${dataFormatada}* às *${hora.value || "..."}*
+
+*Formas de pagamento:*
+> ⚡ *Pix*
+> 💳 *Cartão de crédito*
+> 📄 *Boleto*
+
+Para confirmação do agendamento é necessário o pagamento da entrada no valor de *${entrada.value || "..."}*
+
+📍 O valor restante *${saida.value || "..."}* será pago na clínica no dia do exame.
+      `;
+    }
+
+    // Atualização em tempo real
+    paciente.addEventListener("input", atualizarTexto);
+    clinica.addEventListener("input", atualizarTexto);
+    exame.addEventListener("input", atualizarTexto);
+    data.addEventListener("input", atualizarTexto);
+    hora.addEventListener("input", atualizarTexto);
+    entrada.addEventListener("input", atualizarTexto);
+    saida.addEventListener("input", atualizarTexto);
+
+    // Inicializa já com vazio
+    atualizarTexto();
+  </script>
+
+
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
