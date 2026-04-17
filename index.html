@@ -427,9 +427,10 @@ saidaInput.addEventListener("input", () => {
   </div>
 
   <!-- TEXTO GERADO -->
+  <div class="preview-box">
   <div class="preview" id="resultado"></div>
-  <!-- Esse espaço é para o botão de copiar -->
- <button id="btnCopiar" onclick="copiarTexto()">📋 Copiar mensagem</button>
+  <button id="btnCopiar" onclick="copiarTexto()">📋 Copiar mensagem</button>
+</div>
   <!-- Essa parte é para o script de cópia -->
   <script>
   function copiarTexto() {
@@ -470,8 +471,8 @@ saidaInput.addEventListener("input", () => {
 Para confirmação do agendamento é necessário o pagamento de entrada de *${entrada.value || "..."}*(valor abatido) à DR. EXAME via:
 
 > *⚡ Pix - Chave CNPJ: 45323648000137 (DR EXAME ONLINE)*
-> 💳 *Cartão de crédito*
-> 📄 *Boleto*
+> *💳 Cartão de crédito*
+> *📄 Boleto*
 
 📍 O valor restante *${saida.value || "..."}* será pago na clínica no dia do exame.
       `;
