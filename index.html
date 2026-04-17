@@ -389,8 +389,8 @@
 
     </datalist>
 
-    <input type="date" id="data">
-    <input type="time" id="hora">
+    <input type="text" id="data" placeholder="Data (dd/mm/aaaa)">
+    <input type="text" id="hora" placeholder="Hora (hh:mm)">
     <label for="Entrada">Entrada:</label>
     <input type="text" id="entrada" placeholder="Valor entrada">
     <label for="Saida">Saída:</label>
@@ -435,7 +435,8 @@ saidaInput.addEventListener("input", () => {
     .catch(() => {
       alert("Erro ao copiar 😢");
     });
-}</script>
+}
+</script>
   <script>
     const paciente = document.getElementById("paciente");
     const clinica = document.getElementById("clinica");
