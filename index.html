@@ -530,28 +530,18 @@ function atualizarTemplate() {
 
   if (tipo === "guia") {
     previewTemplate.innerText = `
-📄 GUIA DE AGENDAMENTO
-
-📌 *${paciente.value || "..."}* segue em anexo a guia do exame.
-Não esqueça de levar a guia impressa. No dia levar documento com foto.
-
-📲 Atendimento via WhatsApp:
-Seg a Sex *07h às 18h*
-Sábado *08h às 12h*
+ 
+ 📄 *${paciente.value || "..."}* , segue em anexo a sua GUIA de AGENDAMENTO para o exame solicitado. Não esqueça de no dia levar a GUIA IMPRESSA junto ao documento com foto para ser apresentada na Clínica.
     `;
   }
 
   if (tipo === "atendimento") {
     previewTemplate.innerText = `
-📲 HORÁRIO DE ATENDIMENTO
+Caso queira agendar conosco, estamos à disposição! 😉
 
-Caso queira agendar conosco, estamos à disposição 😉  
+Nossa central de atendimento via WhatsApp funciona de:
 
-🕐 Atendimento via WhatsApp:
-• Segunda a Sexta: 07h às 18h  
-• Sábado: 08h às 12h  
-
-📌 Respostas dentro do horário comercial.
+📅 Segunda a Sexta das 07h às 18h e Sábado das 08 às 12h.  
     `;
   }
 
