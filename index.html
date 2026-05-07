@@ -20,105 +20,10 @@
     
 
     <input type="text" id="paciente" placeholder="Paciente👤">
-    <input type="text" list="listc-clinica" id="clinica" placeholder="Clínica🏢">
-      <datalist id="listc-clinica">
-
-            <option value="Aes Endoscopia-(SBC)">
-            <option value="A+ Medicina Diagnostica">
-            <option value="Aqualli">
-            <option value="Aspriw">
-            <option value="Auri Medicina">
-            <option value="Avante Medicina">
-            <option value="Beta Saúde">
-            <option value="Biolider Medicina Diagnóstica - (Vila Formosa / ZL)">
-            <option value="Biofast - Laboratorial">
-            <option value="Biofast - Imagens">
-            <option value="Bio Imagem">
-            <option value="Clínica Popular Saúde Para Todos - Itaim Paulista">
-            <option value="Clínica Cedil - Lapa">
-            <option value="Clínica De Diagnósticos Angel - (São Paulo / ZO)">
-            <option value="Cedusp">
-            <option value="Cedimen">
-            <option value="CDI Primitiva - Osasco">
-            <option value="CDI Piraporinha - Centro De Diagnóstico Por Imagem">
-            <option value="CDB- São Paulo">
-            <option value="Clínica Multidisciplinar Mundo Tea">
-            <option value="Clínica Guarnieri - ZS">
-            <option value="Clínica EL Diagnósticos - Penha">
-            <option value=" EL Diagnósticos - Jabaquara">
-            <option value=" EL Diagnósticos - Santana">
-            <option value="Inovarad - (São Paulo / ZL)">
-            <option value=" Comvida - Osasco (RM)">
-            <option value=" Urológica de Guarulhos">
-            <option value="Start Diagnósticos - Guarulhos">
-            <option value="Centro Médico Carezzato - Lapa (ZO)">
-            <option value=" Fonseca - (Vila Maria Baixa / ZN)">
-            <option value="Diffusion-Santo andré">
-            <option value="Diffusion-Osasco">
-            <option value="Diffusion-Barra funda">
-            <option value="Diffusion-Santa Cecília">
-            <option value="Diffusion-Tucuruvi">
-            <option value="Diffusion-Santa cruz">
-            <option value="Diffusion-Tatuapé">
-            <option value="Dimagem - Lapa (ZO)">
-            <option value="Dimedi">
-            <option value="Doutor SP - Saúde Para Todos">
-            <option value="Dunacor - (Grande São Paulo / SBC)">
-            <option value="Eletrodiagnostico Osasco">
-            <option value="Endo-Serv Serviços Médicos - Santo André">
-            <option value="Femme - Laboratório da Mulher">
-            <option value="Frei Gaspar Medicina Diagnóstica - SBC">
-            <option value="Genesislab - Vila Mariana">
-            <option value="Gestagin - Tatuapé">
-            <option value="Gimi Medicina Diagnóstica - Penha">
-            <option value="Hipermed - Santo Amaro">
-            <option value="Iacsp Análises Clínicas - Santo André">
-            <option value="IBAC - Laboratório Biomédico - Carapicuíba">
-            <option value="ICZL - Instituto de Cardiologia da Zona Leste">
-            <option value="Idimed Instituto de Diagnóstico Médico - Santo Amaro (ZS)">
-            <option value="Global Med (antiga Imadi)">
-            <option value="Inove - Itaquaquecetuba">
-            <option value="Instituto Perez">
-            <option value="Jardim Medicina Diagnóstica - SBC">
-            <option value="JMS - SBC">
-            <option value="Kouros Medicina Diagnóstica - Bela Vista">
-            <option value="Labi">
-            <option value="Labtré Centro de Diagnósticos - Itaquera">
-            <option value="Leven Saúde - (São Paulo / ZS)">
-            <option value="L&T Saúde - Lapa (ZO)">
-            <option value="Máximo - Tatuapé">
-            <option value="MaisImagem Diagnóstico Médico - Itaquera (ZL)">
-            <option value="Medicom - Santo André / Tucuruvi / Vila Matilde">
-            <option value="MK+ Medicina Diagnóstica - Itapecerica da Serra">
-            <option value="Núcleo Paulista de Endoscopia - Osasco">
-            <option value="Ophthalmocenter - Guarulhos">
-            <option value="Osasco Imagem">
-            <option value="Prezecor Medicina Diagnóstica - (São Paulo / ZN)">
-            <option value="Pro Diagnósticos - Osasco (RM)">
-            <option value="Pro Exame - Vergueiro">
-            <option value="QR Clínica Radiológica - Mauá">
-            <option value="QR Diagnósticos - São Bernardo">
-            <option value="Radivision Radiologia - Itaquera">
-            <option value="Rede Clínica Med">
-            <option value="RHM Cardiologia - Lapa (ZO)">
-            <option value="Saint Patrick - Jaguara">
-            <option value="SPTK">
-            <option value="Saúde da Cidade - Taboão da Serra">
-            <option value="Saúde Dourada - ZS">
-            <option value="Sanitas - Guarulhos">
-            <option value="Scopp - Clínica Dr. Luiz Scoppetta - Santo Amaro (ZS)">
-            <option value="SI Saúde / Conceitu’s Med - Santo Amaro (ZS)">
-            <option value="Transduson - Carapicuíba / Barueri">
-            <option value="Ultrassom Popular - São Mateus">
-            <option value="Ultracare Medicina Acessível - Sacomã">
-            <option value="Uniclin - Guarulhos">
-            <option value="UPI - Unidade Paulista de Imagem - Ferraz">
-            <option value="UPI - Unidade Paulista de Imagem - Guaianases">
-            <option value="Vergueiro Saúde Clínica Médica - SBC">
-            <option value="ZDI">
-      </datalist>
+    
     <input type="text" id="exame" list="exames" placeholder="Procedimento 🧬
 ">
+
        <datalist id="exames">
           <option value="Ultrassom Abdome Total"></option>
           <option value="Angio TC coronariana"></option>
@@ -435,7 +340,7 @@ saidaInput.addEventListener("input", () => {
   
   <script>
     const paciente = document.getElementById("paciente");
-    const clinica = document.getElementById("clinica");
+    //const clinica = document.getElementById("clinica");
     const exame = document.getElementById("exame");
     const data = document.getElementById("datatexto");
     const hora = document.getElementById("hora");
@@ -447,11 +352,10 @@ saidaInput.addEventListener("input", () => {
     function atualizarTexto() {
       const datatexto = data.value || "...";
 
-      resultado.innerHTML = `
-*Confirmação de AGENDAMENTO* ✅
+      resultado.innerHTML = `  
+*Confirmação de AGENDAMENTO* ✅       
 
 👤 Paciente: *${paciente.value || "..."}*
-🏥 Nome da Clínica: *${clinica.value}*
 🧪 Procedimento: *${exame.value || "..."}*
 🗓️ Dia e horário: *${datatexto}* | *${hora.value || "..."}*
 
@@ -465,10 +369,11 @@ Para confirmação do agendamento é necessário o pagamento de entrada de *${en
 📍 O valor restante *${saida.value || "..."}* será pago na clínica no dia do exame.
       `;
     }
+  //// 🏥 Nome da Clínica: *${clinica.value}*
 
     // Atualização em tempo real
     paciente.addEventListener("input", atualizarTexto);
-    clinica.addEventListener("input", atualizarTexto);
+    //clinica.addEventListener("input", atualizarTexto);
     exame.addEventListener("input", atualizarTexto);
     data.addEventListener("input", atualizarTexto);
     hora.addEventListener("input", atualizarTexto);
@@ -494,8 +399,11 @@ Para confirmação do agendamento é necessário o pagamento de entrada de *${en
 
    <button id="btnCopiar" onclick="copiarTemplate()">📋 Copiar</button>
   </div>
+  
 
 </div>
+
+
 <script>
   
   const templateSelect = document.getElementById("templateSelect");
