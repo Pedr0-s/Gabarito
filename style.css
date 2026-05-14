@@ -238,7 +238,7 @@ button:active{
 
 /* ===== MODO ESCURO BOTÃO ===== */
 
-.theme-toggle{
+.theme-toggle{ 
   position:fixed;
   top:20px;
   right:20px;
