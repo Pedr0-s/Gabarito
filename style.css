@@ -370,7 +370,7 @@ button:active{
 }
 #btnCopiarMensagem{
   height: 50px;
-  width: 100%;
+  width: 100%; 
   margin-top: 0px;
   transition: 0.3s;
   cursor: pointer;
