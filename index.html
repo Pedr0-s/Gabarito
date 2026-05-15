@@ -9,8 +9,8 @@
   <text y='.9em' font-size='90'>✅</text>
 </svg>">
 </head>
-<body>
-
+<body class="dark">
+  
   <!-- FORMULÁRIO -->
    
   <div class="formulario">
@@ -334,7 +334,11 @@ saidaInput.addEventListener("input", () => {
   <!-- TEXTO GERADO -->
   <div class="preview-box">
   <div class="preview" id="resultado"></div>
-  <button id="btnCopiar" onclick="copiarTexto()">📋 Copiar mensagem</button>
+  <button id="btnCopiarMensagem"onclick="copiarTexto()">
+
+<ion-icon  name="copy-outline"></ion-icon> Copiar mensagem
+
+</button>
 </div>
   <!-- Essa parte é para o script de cópia -->
   
@@ -397,7 +401,11 @@ Para confirmação do agendamento é necessário o pagamento de entrada de *${en
       Selecione um modelo acima 👆
     </div>
 
-   <button id="btnCopiar" onclick="copiarTemplate()">📋 Copiar</button>
+   <button id="btnCopiarTemplate"onclick="copiarTemplate()">
+
+<ion-icon  name="copy-outline"></ion-icon> Copiar
+
+</button>
   </div>
   
 
@@ -443,18 +451,92 @@ paciente.addEventListener("input", atualizarTemplate);
 entrada.addEventListener("input", atualizarTemplate);
 
 </script>
+<button id="themeToggle">
+  🌙 Modo Escuro
+</button>
 <script>
+
 function copiarTexto() {
-  const texto = document.getElementById("resultado").innerText;
+
+  const texto =
+  document.getElementById("resultado").innerText;
+
+  const botao =
+  document.getElementById("btnCopiarMensagem");
+
   navigator.clipboard.writeText(texto);
+
+  botao.innerHTML = "✅ Copiado!";
+  botao.classList.add("copiado");
+
+  setTimeout(() => {
+
+    botao.innerHTML =
+    "📋 Copiar mensagem";
+
+    botao.classList.remove("copiado");
+
+  }, 2000);
+
 }
 
 function copiarTemplate() {
-  const texto = document.getElementById("previewTemplate").innerText;
+
+  const texto =
+  document.getElementById("previewTemplate").innerText;
+
+  const botao =
+  document.getElementById("btnCopiarTemplate");
+
   navigator.clipboard.writeText(texto);
+
+  botao.innerHTML = "✅ Copiado!";
+  botao.classList.add("copiado");
+
+  setTimeout(() => {
+
+    botao.innerHTML =
+    "📋 Copiar";
+
+    botao.classList.remove("copiado");
+
+  }, 2000);
+
 }
+
+</script>
+<!-- Aqui vai ser a parte do tema claro ou escuro  -->
+   <script>
+
+const themeToggle =
+document.getElementById("themeToggle");
+
+themeToggle.addEventListener("click", () => {
+
+  document.body.classList.toggle("dark");
+
+  if(document.body.classList.contains("dark")){
+
+    themeToggle.innerHTML =
+    "☀️ Modo Claro";
+
+  } else {
+
+    themeToggle.innerHTML =
+    "🌙 Modo Escuro";
+
+  }
+
+});
+
 </script>
 
+<body>
+
+
+<script></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
