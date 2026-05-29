@@ -396,7 +396,17 @@ Para confirmação do agendamento é necessário o pagamento de entrada de *${en
     <option value="valor">Valor e Clínica</option>
   </select>
 
+
+
+  
   <div class="preview-box2">
+    <input 
+   type="text"
+   id="buscarExame"
+   placeholder="Buscar preparo de exame 🔎">
+
+
+<div id="resultadoExames" class="resultado-exames"></div>
     <div class="preview2" id="previewTemplate">
       Selecione um modelo acima 👆
     </div>
@@ -410,6 +420,279 @@ Para confirmação do agendamento é necessário o pagamento de entrada de *${en
   
 
 </div>
+
+
+<script>
+
+const buscarExame =
+document.getElementById("buscarExame");
+
+const resultadoExames =
+document.getElementById("resultadoExames");
+
+const exames = [
+
+
+
+
+
+
+
+
+
+{
+nome: "BK NO ESCARRO / CULTURA PARA BK",
+preparo: `• Jejum de 4 horas, não é obrigatório.
+Procedimento deve ser realizado depois de uma higiene bucal somente com agua pela manhã.
+`
+},
+{
+nome: "ENDOSCOPIA",
+preparo: `• Jejum de 8 a 12 horas inclusive água
+• Não dirigir após o exame
+• Levar acompanhante maior de 18 anos
+• Chegar 30 minutos antes
+`
+},
+
+{
+nome: "COLONOSCOPIA",
+preparo: `
+• Verificar preparo detalhado
+`
+},
+
+{
+nome: "CURVA GLICÊMICA",
+preparo: `
+• Jejum de 12 horas
+• Duração aproximada de 2 horas
+• Ir com acompanhante
+• Suspender xaropes
+`
+},
+
+{
+nome: "DENSITOMETRIA ÓSSEA",
+preparo: `
+• Não tomar cálcio 24h antes
+• Não realizado em gestantes
+• Evitar roupas com metal
+`
+},
+
+{
+nome: "ELETROCARDIOGRAMA",
+preparo: `
+• Homens devem aparar pelos do tórax
+• Mulheres usar top sem arame
+`
+},
+
+{
+nome: "ELETROENCEFALOGRAMA",
+preparo: `
+• Cabelos limpos
+• Não usar creme ou gel
+• Não ingerir café
+`
+},
+
+{
+nome: "ESPERMOGRAMA",
+preparo: `
+• Abstinência sexual de 3 a 5 dias
+`
+},
+
+{
+nome: "ESPIROMETRIA",
+preparo: `
+• Suspender broncodilatadores 12h antes
+• Não fumar
+• Não ingerir álcool
+`
+},
+
+{
+nome: "HOLTER 24 HORAS",
+preparo: `
+• Tomar banho antes
+• Não usar hidratantes
+• Trazer lista de medicamentos
+`
+},
+
+{
+nome: "MAMOGRAFIA",
+preparo: `
+• Não usar creme
+• Não usar desodorante
+• Levar exames anteriores
+`
+},
+
+{
+nome: "PAPANICOLAU",
+preparo: `
+• Não menstruada
+• 3 dias sem relações
+• Sem cremes ou duchas
+`
+},
+
+{
+nome: "RETOSSIGMOIDOSCOPIA",
+preparo: `
+• Verificar preparo detalhado
+`
+},
+
+{
+nome: "TC TÓRAX",
+preparo: `
+• Jejum absoluto de 4 horas
+`
+},
+
+{
+nome: "TC ABDÔMEN TOTAL",
+preparo: `
+• Jejum de 6 horas
+• Chegar 30 minutos antes
+`
+},
+
+{
+nome: "TESTE ERGOMÉTRICO",
+preparo: `
+• Não realizar em jejum
+• Não fumar
+• Ir com roupa confortável
+`
+},
+
+{
+nome: "ULTRASSOM TRANSVAGINAL",
+preparo: `
+• Realizado entre 6ª e 12ª semana
+`
+},
+
+{
+nome: "ULTRASSOM ABDÔMEN TOTAL",
+preparo: `
+• Jejum de 8 horas
+• Pode tomar água
+`
+},
+
+{
+nome: "ULTRASSOM DA PRÓSTATA",
+preparo: `
+• Tomar laxante na véspera
+• Alimentação leve
+`
+},
+
+{
+nome: "UROCULTURA",
+preparo: `
+• Coletar primeira urina do dia
+• Higienizar área íntima
+`
+},
+
+{
+nome: "URORESSONÂNCIA MAGNÉTICA",
+preparo: `
+• Jejum de 4 horas
+• Creatinina até 4 meses
+`
+},
+
+{
+nome: "VULVOSCOPIA",
+preparo: `
+• Não menstruada
+• Sem relações por 3 dias
+`
+}
+
+];
+
+buscarExame.addEventListener("input", () => {
+
+const texto =
+buscarExame.value.toLowerCase();
+
+resultadoExames.innerHTML = "";
+
+if(texto === ""){
+return;
+}
+
+const filtrados =
+exames.filter(exame =>
+
+exame.nome
+.toLowerCase()
+.includes(texto)
+
+);
+
+if(filtrados.length === 0){
+
+resultadoExames.innerHTML = `
+
+<div class="card-exame">
+Nenhum exame encontrado 😢
+</div>
+
+`;
+
+return;
+
+}
+
+filtrados.forEach(exame => {
+
+resultadoExames.innerHTML += `
+
+<div class="card-exame">
+
+<div class="nome-exame">
+${exame.nome}
+</div>
+
+<div class="preparo-exame">
+${exame.preparo}
+</div>
+
+<button
+class="btn-copiar-exame"
+onclick="copiarPreparo(\`${exame.nome}\n\n${exame.preparo}\`)">
+
+📋 Copiar preparo
+
+</button>
+
+</div>
+
+`;
+
+});
+
+});
+
+function copiarPreparo(texto){
+
+navigator.clipboard.writeText(texto);
+
+}
+
+</script>
+```
 
 
 <script>
