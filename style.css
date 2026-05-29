@@ -365,14 +365,14 @@ button:active{
 
   transform: scale(1.03);
 
-  transition: 0.3s;
+  transition: 0.1s;
 
 }
 #btnCopiarMensagem{
   height: 50px;
   width: 100%; 
   margin-top: 0px;
-  transition: 0.3s;
+  transition: 0.1s;
   cursor: pointer;
 
 }
@@ -380,7 +380,7 @@ button:active{
   height: 50px;
   width: 100%;
   margin-top: 24px;
-  transition: 0.3s;
+  transition: 0.1s;
   cursor: pointer;
 
 }
@@ -402,7 +402,7 @@ button:active{
 
   font-weight: bold;
 
-  transition: 0.3s;
+  transition: 0.1s;
 
   z-index: 999;
 
@@ -447,5 +447,117 @@ body.dark .preview2{
 
   background: #111827;
   color: white;
+
+}
+.resultado-exames{
+
+  margin-top: 15px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 12px;
+
+}
+
+.card-exame{
+
+  background: rgba(15, 23, 42, 0.9);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  padding: 16px;
+
+  border-radius: 18px;
+
+  color: white;
+
+  transition: 0.2s;
+
+  animation: aparecer 0.2s ease;
+
+}
+
+.card-exame:hover{
+
+  border-color: #8b5cf6;
+
+  transform: translateY(-2px);
+
+}
+
+.nome-exame{
+
+  font-weight: bold;
+
+  font-size: 15px;
+
+  margin-bottom: 10px;
+
+  color: #ffffff;
+
+}
+
+.preparo-exame{
+
+  color: #cbd5e1;
+
+  line-height: 1.5;
+
+  white-space: pre-line;
+
+  font-size: 14px;
+
+}
+
+.btn-copiar-exame{
+
+  margin-top: 14px;
+
+  width: 100%;
+
+  border: none;
+
+  padding: 12px;
+
+  border-radius: 12px;
+
+  cursor: pointer;
+
+  background: linear-gradient(
+    135deg,
+    #8b5cf6,
+    #7c3aed
+  );
+
+  color: white;
+
+  font-weight: bold;
+
+  transition: 0.2s;
+
+}
+
+.btn-copiar-exame:hover{
+
+  transform: scale(1.02);
+
+}
+
+@keyframes aparecer{
+
+  from{
+
+    opacity: 0;
+    transform: translateY(10px);
+
+  }
+
+  to{
+
+    opacity: 1;
+    transform: translateY(0);
+
+  }
 
 }
