@@ -356,6 +356,17 @@ saidaInput.addEventListener("input", () => {
     function atualizarTexto() {
       const datatexto = data.value || "...";
 
+const valorEntrada = parseFloat(
+    entrada.value.replace("R$", "").replace(/\./g, "").replace(",", ".").trim()
+) || 0;
+
+const valorSaida = parseFloat(
+    saida.value.replace("R$", "").replace(/\./g, "").replace(",", ".").trim()
+) || 0;
+
+const total = valorEntrada + valorSaida;
+    
+
       resultado.innerHTML = `  
 *Confirmação de AGENDAMENTO* ✅       
 
@@ -371,7 +382,9 @@ Para confirmação do agendamento é necessário o pagamento de entrada de *${en
 > *📄 Boleto*
 
 📍 O valor restante *${saida.value || "..."}* será pago na clínica no dia do exame.
-      `;
+
+*Totalizando* *R$ ${total.toFixed(2).replace(".", ",")}*`; 
+      
     }
   //// 🏥 Nome da Clínica: *${clinica.value}*
 
